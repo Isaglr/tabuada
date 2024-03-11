@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+
+@font-face {
+    font-family:mt;
+    src: url(fankids/FanKids.ttf);
+}
+
+*{
+    font-family: mt;
+}
+
+body{
+    background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-mathematics-education-pink-background-picture-image_1176963.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1{
+    color: rgb(228, 255, 242);
+    -webkit-text-stroke-width: 0.3px;
+-webkit-text-stroke-color: #000;
+}
+
+#container{
+    margin-top: 100px;
+}
+
+input, button{
+    padding: 25px;
+    border-radius: 16%;
+    border: none;
+    font-size: 20px;
+}
+
+#tabuada-form{
+    
+    transform: translate(-40px , 30px);
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    width: 20%;
+    background-color: burlywood;
+}
+
+footer{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0%;
+    
+}

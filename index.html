@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada</title>
+</head>
+
+<body>
+
+    <div id="tabuada-form">
+        <div id="container">
+            <h1>Gerador de Tabuada</h1>
+            <input type="number" id="numInput" placeholder="Digite um número ">
+            <button onclick="geradorTabuada()">Gerar Tabuada</button>
+        </div>
+        <div id="tabuada"></div>
+    </div>
+    <script>
+        function geradorTabuada() {
+            var numInput = document.getElementById("numInput").value;
+            var tabuadaDiv = document.getElementById("tabuada");
+            tabuadaDiv.innerHTML = "";
+
+            if (!numInput || isNaN(numInput)) {
+                tabuadaDiv.innerHTML = "<p> Por favor, insira um número válido.</p>";
+                return;
+            }
+
+            var tableHTML = "<h3>Tabuada do " + numInput + "</h3> <table border='1'> <tr> <th> Número </th> <th> Resultado </th> </tr>";
+
+            for (var i = 1; i <= 10; i++) {
+                tableHTML += "<tr><td>" + numInput + "x" + i + "</td><td>" + (numInput * i) + "</td></tr>";
+            }
+
+            tableHTML += "</table";
+            tabuadaDiv.innerHTML = tableHTML;
+        }
+    </script>
+</body>
+
+
+<footer> Desenvolvido por Isadora Goulart| 2024 </footer>
+</html>
